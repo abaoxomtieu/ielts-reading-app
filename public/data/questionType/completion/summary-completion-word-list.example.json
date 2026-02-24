@@ -1,0 +1,49 @@
+{
+  "meta": {
+    "questionType": "completion",
+    "variant": "summary_completion_word_list",
+    "section": 1,
+    "questionNumber": 14
+  },
+  "content": {
+    "questionText": "Questions 14–18",
+    "instructions": "Complete the summary below using the list of words, A–J, below. Write the correct letters, A–J, in boxes 14–18 on your answer sheet. You may use any letter more than once.",
+    "summary": {
+      "text": "The Nicaraguan National Literacy Crusade aimed to teach large numbers of illiterate  to read and write. Public health experts have long known that there is a connection between child health and  . However, it was not clear whether these two factors were directly linked. This question was investigated by  in Nicaragua. When other influences such as  and attitudes to children were controlled for, it was shown that  alone can significantly improve infant health and survival.",
+      "blanks": [
+        { "id": 14, "position": 117, "answer": "I" },
+        { "id": 15, "position": 214, "answer": "B" },
+        { "id": 16, "position": 351, "answer": "C" },
+        { "id": 17, "position": 437, "answer": "J" },
+        { "id": 18, "position": 567, "answer": "F" }
+      ]
+    },
+    "wordLimit": "Write the correct letters, A–J.",
+    "options": [
+      { "id": "A", "text": "A child literacy" },
+      { "id": "B", "text": "B men and women" },
+      { "id": "C", "text": "C an international research team" },
+      { "id": "D", "text": "D medical care" },
+      { "id": "E", "text": "E mortality" },
+      { "id": "F", "text": "F maternal literacy" },
+      { "id": "G", "text": "G adults and children" },
+      { "id": "H", "text": "H paternal literacy" },
+      { "id": "I", "text": "I a National Literacy Crusade" },
+      { "id": "J", "text": "J family wealth" }
+    ],
+    "uiHints": {
+      "showOptions": true
+    }
+  },
+  "answerKey": {
+    "14": "I",
+    "15": "B",
+    "16": "C",
+    "17": "J",
+    "18": "F"
+  },
+  "scoring": {
+    "points": 1
+  }
+}
+

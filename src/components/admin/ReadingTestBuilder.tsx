@@ -75,6 +75,11 @@ const QUESTION_TEMPLATES: TemplateItem[] = [
     filePath: '/data/questionType/completion/summary-completion.example.json',
   },
   {
+    id: 'sum-word-list',
+    title: 'Summary completion (word list)',
+    filePath: '/data/questionType/completion/summary-completion-word-list.example.json',
+  },
+  {
     id: 'note',
     title: 'Note completion',
     filePath: '/data/questionType/completion/note-completion.example.json',
