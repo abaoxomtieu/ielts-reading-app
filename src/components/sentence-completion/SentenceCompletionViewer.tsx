@@ -12,6 +12,8 @@ export default function SentenceCompletionViewer({ data }: Props) {
   const [answers, setAnswers] = useState<Record<number, string>>({});
   const sentences = content.sentences || [];
   const wordLimit = content.wordLimit || 'NO MORE THAN TWO WORDS';
+  const options = content.options;
+  const showOptions = content.uiHints?.showOptions ?? false;
 
   const handleChange = (id: number, value: string) => {
     setAnswers((prev) => ({ ...prev, [id]: value }));
@@ -57,6 +59,18 @@ export default function SentenceCompletionViewer({ data }: Props) {
       <div className="mb-4 p-3 bg-blue-50 border-l-4 border-blue-500 rounded">
         <p className="text-sm font-semibold text-blue-800">{wordLimit}</p>
       </div>
+      {showOptions && options && options.length > 0 && (
+        <div className="mb-4 p-3 bg-gray-50 rounded border border-gray-200">
+          <div className="grid gap-2 text-sm text-gray-800 sm:grid-cols-2">
+            {options.map((opt) => (
+              <div key={opt.id} className="flex items-start gap-2">
+                <span className="font-bold text-gray-900">{opt.id}</span>
+                <span className="text-gray-800">{opt.text}</span>
+              </div>
+            ))}
+          </div>
+        </div>
+      )}
       <div className="space-y-1">
         {sentences.map(renderSentence)}
       </div>

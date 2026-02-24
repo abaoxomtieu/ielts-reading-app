@@ -70,6 +70,11 @@ const QUESTION_TEMPLATES: TemplateItem[] = [
     filePath: '/data/questionType/sentence-completion/sentence-completion.example.json',
   },
   {
+    id: 'sc-word-list',
+    title: 'Sentence completion (word list)',
+    filePath: '/data/questionType/sentence-completion/sentence-completion-word-list.example.json',
+  },
+  {
     id: 'sum',
     title: 'Summary completion',
     filePath: '/data/questionType/completion/summary-completion.example.json',

@@ -1,0 +1,43 @@
+{
+  "meta": {
+    "questionType": "sentence_completion",
+    "variant": "sentence_completion_word_list",
+    "section": 1,
+    "questionNumber": 1
+  },
+  "content": {
+    "questionText": "Questions 1–5",
+    "instructions": "Complete the sentence below using the list of words, A–J, below. Write the correct letters, A–J, in boxes 1–5 on your answer sheet. You may use any letter more than once.",
+    "sentences": [
+      {
+        "id": 1,
+        "text": "The Nicaraguan National Literacy Crusade aimed to teach large numbers of illiterate [______] to read and write.",
+        "answer": "I",
+        "blankPosition": "middle"
+      }
+    ],
+    "wordLimit": "Write the correct letter, A–J.",
+    "options": [
+      { "id": "A", "text": "child literacy" },
+      { "id": "B", "text": "men and women" },
+      { "id": "C", "text": "an international research team" },
+      { "id": "D", "text": "medical care" },
+      { "id": "E", "text": "mortality" },
+      { "id": "F", "text": "maternal literacy" },
+      { "id": "G", "text": "adults and children" },
+      { "id": "H", "text": "paternal literacy" },
+      { "id": "I", "text": "a National Literacy Crusade" },
+      { "id": "J", "text": "family wealth" }
+    ],
+    "uiHints": {
+      "showOptions": true
+    }
+  },
+  "answerKey": {
+    "1": "I"
+  },
+  "scoring": {
+    "points": 1
+  }
+}
+

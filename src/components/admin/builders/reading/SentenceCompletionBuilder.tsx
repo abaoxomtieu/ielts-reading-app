@@ -1,7 +1,12 @@
 'use client';
 
 import React, { useEffect, useState } from 'react';
-import type { SentenceCompletionQuestion, SentenceCompletionItem, AnswerKey } from '@/types';
+import type {
+  SentenceCompletionQuestion,
+  SentenceCompletionItem,
+  AnswerKey,
+  SummaryOption,
+} from '@/types';
 import VisualBlankEditor from '@/components/admin/VisualBlankEditor';
 
 interface Props {
@@ -25,6 +30,12 @@ export default function SentenceCompletionBuilder({ question, onChange }: Props)
           },
         ],
   );
+  const [options, setOptions] = useState<SummaryOption[]>(
+    question.content.options?.length ? question.content.options : [],
+  );
+  const [showOptions, setShowOptions] = useState<boolean>(
+    question.content.uiHints?.showOptions ?? false,
+  );
 
   useEffect(() => {
     const answerKey: AnswerKey = {};
@@ -45,6 +56,11 @@ export default function SentenceCompletionBuilder({ question, onChange }: Props)
       instructions,
       wordLimit,
       sentences: normalized,
+      options,
+      uiHints: {
+        ...(question.content.uiHints ?? {}),
+        showOptions,
+      },
     };
 
     onChange({
@@ -52,7 +68,7 @@ export default function SentenceCompletionBuilder({ question, onChange }: Props)
       content: nextContent,
       answerKey,
     });
-  }, [question, questionText, instructions, wordLimit, sentences, onChange]);
+  }, [question, questionText, instructions, wordLimit, sentences, options, showOptions, onChange]);
 
   const addSentence = () => {
     const nextId = sentences.length > 0 ? Math.max(...sentences.map((s) => s.id)) + 1 : 1;
@@ -110,6 +126,18 @@ export default function SentenceCompletionBuilder({ question, onChange }: Props)
             onChange={(e) => setWordLimit(e.target.value)}
             className="w-full px-3 py-2 border border-gray-300 rounded-lg text-sm"
           />
+        </div>
+        <div className="flex items-center gap-2">
+          <input
+            id="sc-show-options"
+            type="checkbox"
+            checked={showOptions}
+            onChange={(e) => setShowOptions(e.target.checked)}
+            className="w-4 h-4"
+          />
+          <label htmlFor="sc-show-options" className="text-xs font-semibold text-gray-700">
+            Show word list options (A, B, C…)
+          </label>
         </div>
       </div>
 
@@ -177,6 +205,49 @@ export default function SentenceCompletionBuilder({ question, onChange }: Props)
             className="w-full py-2 border-2 border-dashed border-gray-300 text-gray-600 rounded-lg hover:bg-gray-50 text-sm font-medium"
           >
             + Add sentence
+          </button>
+        </div>
+      </div>
+
+      <div className="border border-gray-200 rounded-lg p-4 bg-white space-y-3">
+        <h3 className="text-xs font-bold text-gray-800 uppercase tracking-wide mb-1">
+          Options (optional)
+        </h3>
+        <div className="space-y-2">
+          {options.map((opt) => (
+            <div key={opt.id} className="flex items-center gap-2">
+              <span className="px-2 py-1 text-xs font-bold text-blue-700 bg-blue-50 rounded">
+                {opt.id}
+              </span>
+              <input
+                value={opt.text}
+                onChange={(e) =>
+                  setOptions((prev) =>
+                    prev.map((o) => (o.id === opt.id ? { ...o, text: e.target.value } : o)),
+                  )
+                }
+                className="flex-1 px-2 py-1.5 border border-gray-300 rounded-md text-sm"
+              />
+              <button
+                type="button"
+                onClick={() =>
+                  setOptions((prev) => prev.filter((o) => o.id !== opt.id))
+                }
+                className="px-2 py-1 text-xs text-red-500 hover:text-red-700"
+              >
+                Remove
+              </button>
+            </div>
+          ))}
+          <button
+            type="button"
+            onClick={() => {
+              const nextLetter = String.fromCharCode(65 + options.length);
+              setOptions((prev) => [...prev, { id: nextLetter, text: `Option ${nextLetter}` }]);
+            }}
+            className="w-full py-2 border-2 border-dashed border-gray-300 text-gray-600 rounded-lg hover:bg-gray-50 text-sm font-medium"
+          >
+            + Add option
           </button>
         </div>
       </div>

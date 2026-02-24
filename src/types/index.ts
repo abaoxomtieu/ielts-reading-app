@@ -252,6 +252,12 @@ export interface SentenceCompletionContent {
   instructions: string;
   sentences: SentenceCompletionItem[];
   wordLimit: string;
+  /**
+   * Optional word list (A, B, C...) for variants
+   * where candidates choose a letter instead of
+   * writing the full word from the passage.
+   */
+  options?: SummaryOption[];
   uiHints?: UiHints;
   validation?: Validation;
 }
