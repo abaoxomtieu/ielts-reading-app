@@ -1,0 +1,19 @@
+{
+  "meta": {
+    "questionType": "diagram_label_completion",
+    "section": 3,
+    "questionNumber": 38
+  },
+  "content": {
+    "questionText": "Label the diagram below. Write NO MORE THAN TWO WORDS for each answer.",
+    "instructions": "Use words from the passage.",
+    "labels": [
+      { "id": 38, "label": "Part 1 (top)", "answer": "solar panel" },
+      { "id": 39, "label": "Part 2 (middle)", "answer": "inverter" },
+      { "id": 40, "label": "Part 3 (bottom)", "answer": "battery" }
+    ],
+    "wordLimit": "NO MORE THAN TWO WORDS"
+  },
+  "answerKey": { "38": "solar panel", "39": "inverter", "40": "battery" },
+  "scoring": { "points": 1 }
+}

@@ -1,0 +1,23 @@
+{
+  "meta": {
+    "questionType": "multiple_choice",
+    "variant": "multiple_answers",
+    "section": 1,
+    "questionNumber": 2
+  },
+  "content": {
+    "questionText": "Choose TWO letters, A–E.",
+    "instructions": "Which TWO of the following are mentioned as benefits of the project?",
+    "options": [
+      { "id": "A", "text": "Job creation" },
+      { "id": "B", "text": "Reduced traffic" },
+      { "id": "C", "text": "Lower crime rates" },
+      { "id": "D", "text": "Improved air quality" },
+      { "id": "E", "text": "More green spaces" }
+    ],
+    "answer": { "correctOptions": ["A", "D"], "explanation": "The passage states that the project will create jobs and improve air quality." },
+    "validation": { "minCorrectRequired": 2 }
+  },
+  "answerKey": { "2": ["A", "D"] },
+  "scoring": { "points": 1 }
+}

@@ -1,0 +1,37 @@
+{
+  "meta": {
+    "questionType": "completion",
+    "variant": "table_completion",
+    "section": 2,
+    "questionNumber": 19
+  },
+  "content": {
+    "questionText": "Complete the table below. Write NO MORE THAN TWO WORDS for each answer.",
+    "instructions": "Use words from the passage.",
+    "table": {
+      "title": "Research findings by region",
+      "headers": ["Region", "Main finding", "Year"],
+      "rows": [
+        {
+          "id": 1,
+          "cells": [
+            { "value": "Europe", "isEditable": false },
+            { "value": "", "isEditable": true, "answer": "population growth" },
+            { "value": "2018", "isEditable": false }
+          ]
+        },
+        {
+          "id": 2,
+          "cells": [
+            { "value": "Asia", "isEditable": false },
+            { "value": "", "isEditable": true, "answer": "urban expansion" },
+            { "value": "2019", "isEditable": false }
+          ]
+        }
+      ]
+    },
+    "wordLimit": "NO MORE THAN TWO WORDS"
+  },
+  "answerKey": { "1-1": "population growth", "2-1": "urban expansion" },
+  "scoring": { "points": 1 }
+}

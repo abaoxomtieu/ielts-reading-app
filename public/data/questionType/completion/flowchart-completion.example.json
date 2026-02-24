@@ -1,0 +1,30 @@
+{
+  "meta": {
+    "questionType": "completion",
+    "variant": "flowchart_completion",
+    "section": 3,
+    "questionNumber": 34
+  },
+  "content": {
+    "questionText": "Complete the flow chart below. Write NO MORE THAN TWO WORDS for each answer.",
+    "instructions": "Use words from the passage.",
+    "flowchart": {
+      "title": "Stages of the research process",
+      "nodes": [
+        { "id": 34, "text": "Conduct [______]", "answer": "literature review", "position": { "x": 50, "y": 150 } },
+        { "id": 35, "text": "Choose research [______]", "answer": "methodology", "position": { "x": 50, "y": 250 } },
+        { "id": 36, "text": "Obtain [______] approval", "answer": "ethics", "position": { "x": 50, "y": 350 } },
+        { "id": 37, "text": "Collect [______] data", "answer": "primary", "position": { "x": 50, "y": 450 } }
+      ],
+      "connections": [
+        { "from": 34, "to": 35 },
+        { "from": 35, "to": 36 },
+        { "from": 36, "to": 37 }
+      ]
+    },
+    "wordLimit": "NO MORE THAN TWO WORDS",
+    "uiHints": { "showArrows": true, "verticalLayout": true }
+  },
+  "answerKey": { "34": "literature review", "35": "methodology", "36": "ethics", "37": "primary" },
+  "scoring": { "points": 1 }
+}

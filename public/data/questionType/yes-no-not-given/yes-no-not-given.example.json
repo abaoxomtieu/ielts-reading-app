@@ -1,0 +1,18 @@
+{
+  "meta": {
+    "questionType": "yes_no_not_given",
+    "section": 1,
+    "questionNumber": 4
+  },
+  "content": {
+    "questionText": "Do the following statements agree with the views of the writer?",
+    "instructions": "Write YES if the statement agrees with the views of the writer; NO if the statement contradicts the views of the writer; NOT GIVEN if it is impossible to say what the writer thinks about this.",
+    "statements": [
+      { "id": 1, "text": "Climate change will have a greater impact on coastal cities." },
+      { "id": 2, "text": "Technology alone can solve environmental problems." },
+      { "id": 3, "text": "Governments should invest more in renewable energy." }
+    ]
+  },
+  "answerKey": { "1": "Yes", "2": "No", "3": "Not given" },
+  "scoring": { "points": 1 }
+}

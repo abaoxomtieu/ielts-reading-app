@@ -1,0 +1,34 @@
+{
+  "meta": {
+    "questionType": "completion",
+    "variant": "note_completion",
+    "section": 1,
+    "questionNumber": 5
+  },
+  "content": {
+    "questionText": "Complete the notes below. Write NO MORE THAN TWO WORDS for each answer.",
+    "instructions": "Use words from the passage.",
+    "notes": {
+      "title": "Solar Energy – Key Points",
+      "sections": [
+        {
+          "heading": "Advantages",
+          "bulletPoints": [
+            { "id": 5, "text": "Renewable and [______]", "answer": "sustainable" },
+            { "id": 6, "text": "Reduces [______] emissions", "answer": "carbon" }
+          ]
+        },
+        {
+          "heading": "Challenges",
+          "bulletPoints": [
+            { "id": 7, "text": "Initial [______] can be high", "answer": "cost" },
+            { "id": 8, "text": "Depends on [______] conditions", "answer": "weather" }
+          ]
+        }
+      ]
+    },
+    "wordLimit": "NO MORE THAN TWO WORDS"
+  },
+  "answerKey": { "5": "sustainable", "6": "carbon", "7": "cost", "8": "weather" },
+  "scoring": { "points": 1 }
+}

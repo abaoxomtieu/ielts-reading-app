@@ -1,0 +1,19 @@
+{
+  "meta": {
+    "questionType": "short_answer",
+    "section": 1,
+    "questionNumber": 9
+  },
+  "content": {
+    "questionText": "Answer the questions below. Write NO MORE THAN TWO WORDS AND/OR A NUMBER for each answer.",
+    "instructions": "Use words from the passage.",
+    "questions": [
+      { "id": 9, "text": "How many participants took part in the study?", "answer": "500" },
+      { "id": 10, "text": "In which year was the project completed?", "answer": "2020" },
+      { "id": 11, "text": "What was the main source of funding?", "answer": "government" }
+    ],
+    "wordLimit": "NO MORE THAN TWO WORDS AND/OR A NUMBER"
+  },
+  "answerKey": { "9": "500", "10": "2020", "11": "government" },
+  "scoring": { "points": 1 }
+}

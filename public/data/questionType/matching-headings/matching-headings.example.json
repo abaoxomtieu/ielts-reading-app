@@ -1,0 +1,21 @@
+{
+  "meta": {
+    "questionType": "matching_headings",
+    "section": 2,
+    "questionNumber": 15
+  },
+  "content": {
+    "questionText": "Choose the correct heading for each paragraph, A–D, from the list of headings below.",
+    "instructions": "There are more headings than paragraphs, so you will not use all of them.",
+    "headings": [
+      { "id": "i", "text": "Early attempts at flight" },
+      { "id": "ii", "text": "The first successful engine" },
+      { "id": "iii", "text": "Commercial applications" },
+      { "id": "iv", "text": "Challenges faced by pioneers" },
+      { "id": "v", "text": "Global impact of the invention" }
+    ],
+    "paragraphLabels": ["A", "B", "C", "D"]
+  },
+  "answerKey": { "A": "i", "B": "iv", "C": "ii", "D": "iii" },
+  "scoring": { "points": 1 }
+}

@@ -1,0 +1,25 @@
+{
+  "meta": {
+    "questionType": "matching_features",
+    "section": 2,
+    "questionNumber": 18
+  },
+  "content": {
+    "questionText": "Look at the following researchers (A–D) and the list of findings below. Match each finding with the correct researcher.",
+    "instructions": "You may use any letter more than once.",
+    "statements": [
+      { "id": 1, "text": "Discovered a link between diet and longevity" },
+      { "id": 2, "text": "Developed a new method of data analysis" },
+      { "id": 3, "text": "Challenged existing theories about migration" }
+    ],
+    "options": [
+      { "id": "A", "text": "Dr. Sarah Chen" },
+      { "id": "B", "text": "Professor James Wright" },
+      { "id": "C", "text": "Dr. Emma Foster" },
+      { "id": "D", "text": "Professor Michael Torres" }
+    ],
+    "allowReuse": true
+  },
+  "answerKey": { "1": "A", "2": "B", "3": "D" },
+  "scoring": { "points": 1 }
+}

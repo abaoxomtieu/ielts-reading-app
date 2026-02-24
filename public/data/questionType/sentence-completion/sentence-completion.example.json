@@ -1,0 +1,19 @@
+{
+  "meta": {
+    "questionType": "sentence_completion",
+    "section": 3,
+    "questionNumber": 27
+  },
+  "content": {
+    "questionText": "Complete the sentences below. Choose your answers from the passage.",
+    "instructions": "Write NO MORE THAN TWO WORDS for each answer.",
+    "sentences": [
+      { "id": 27, "text": "The [______] of the building took longer than expected.", "answer": "construction" },
+      { "id": 28, "text": "Researchers found that [______] was the main factor in success.", "answer": "practice" },
+      { "id": 29, "text": "The new policy aims to reduce [______] in the city centre.", "answer": "traffic" }
+    ],
+    "wordLimit": "NO MORE THAN TWO WORDS"
+  },
+  "answerKey": { "27": "construction", "28": "practice", "29": "traffic" },
+  "scoring": { "points": 1 }
+}

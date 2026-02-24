@@ -1,0 +1,19 @@
+{
+  "meta": {
+    "questionType": "matching_information",
+    "section": 2,
+    "questionNumber": 14
+  },
+  "content": {
+    "questionText": "The passage has six paragraphs, A–F. Which paragraph contains the following information?",
+    "instructions": "You may use any letter more than once.",
+    "statements": [
+      { "id": 1, "text": "A description of the experimental method used" },
+      { "id": 2, "text": "The reason why the project was delayed" },
+      { "id": 3, "text": "A comparison with previous studies" }
+    ],
+    "paragraphLabels": ["A", "B", "C", "D", "E", "F"]
+  },
+  "answerKey": { "1": "B", "2": "D", "3": "A" },
+  "scoring": { "points": 1 }
+}

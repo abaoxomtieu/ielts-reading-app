@@ -1,0 +1,27 @@
+{
+  "meta": {
+    "questionType": "matching_sentence_endings",
+    "section": 2,
+    "questionNumber": 21
+  },
+  "content": {
+    "questionText": "Complete each sentence with the correct ending, A–G, below.",
+    "instructions": "There are more endings than sentence beginnings, so you will not use all of them.",
+    "sentenceStarts": [
+      { "id": 1, "text": "The construction of the bridge was delayed because" },
+      { "id": 2, "text": "Local residents protested against the project" },
+      { "id": 3, "text": "The final design was chosen" }
+    ],
+    "endings": [
+      { "id": "A", "text": "of adverse weather conditions." },
+      { "id": "B", "text": "after a lengthy consultation process." },
+      { "id": "C", "text": "due to concerns about wildlife." },
+      { "id": "D", "text": "by an international panel of experts." },
+      { "id": "E", "text": "in spite of budget constraints." },
+      { "id": "F", "text": "until environmental impact was assessed." },
+      { "id": "G", "text": "following a public vote." }
+    ]
+  },
+  "answerKey": { "1": "A", "2": "C", "3": "D" },
+  "scoring": { "points": 1 }
+}

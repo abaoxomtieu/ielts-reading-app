@@ -1,0 +1,21 @@
+{
+  "meta": {
+    "questionType": "multiple_choice",
+    "variant": "single_answer",
+    "section": 1,
+    "questionNumber": 1
+  },
+  "content": {
+    "questionText": "Choose the correct letter, A, B, C or D.",
+    "instructions": "What is the main purpose of the passage?",
+    "options": [
+      { "id": "A", "text": "To describe the history of solar energy" },
+      { "id": "B", "text": "To explain how solar panels work" },
+      { "id": "C", "text": "To compare different renewable energy sources" },
+      { "id": "D", "text": "To argue for increased use of solar power" }
+    ],
+    "answer": { "correctOption": "B", "explanation": "The passage focuses on the mechanism of solar panels." }
+  },
+  "answerKey": { "1": "B" },
+  "scoring": { "points": 1 }
+}

@@ -1,0 +1,24 @@
+{
+  "meta": {
+    "questionType": "completion",
+    "variant": "summary_completion",
+    "section": 3,
+    "questionNumber": 30
+  },
+  "content": {
+    "questionText": "Complete the summary below. Choose your answers from the passage.",
+    "instructions": "Write NO MORE THAN TWO WORDS for each answer.",
+    "summary": {
+      "text": "The study examined the effects of  on  behaviour. Participants were divided into two  . The results showed a significant  in the test group compared to the control group.",
+      "blanks": [
+        { "id": 30, "position": 31, "answer": "sleep" },
+        { "id": 31, "position": 35, "answer": "learning" },
+        { "id": 32, "position": 72, "answer": "groups" },
+        { "id": 33, "position": 115, "answer": "improvement" }
+      ]
+    },
+    "wordLimit": "NO MORE THAN TWO WORDS"
+  },
+  "answerKey": { "30": "sleep", "31": "learning", "32": "groups", "33": "improvement" },
+  "scoring": { "points": 1 }
+}
