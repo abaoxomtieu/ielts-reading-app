@@ -7,6 +7,7 @@ import type {
   FlowchartNode,
   AnswerKey,
 } from '@/types';
+import VisualBlankEditor from '@/components/admin/VisualBlankEditor';
 
 interface Props {
   question: FlowchartCompletionQuestion;
@@ -176,12 +177,12 @@ export default function FlowchartCompletionBuilder({ question, onChange }: Props
                 </div>
                 <div>
                   <label className="block text-[10px] font-semibold text-gray-500 uppercase mb-1">
-                    Text (use [______] for blank)
+                    Text (click &quot;Add Blank&quot; and drag pills)
                   </label>
-                  <textarea
+                  <VisualBlankEditor
                     value={node.text}
-                    onChange={(e) => updateNode(node.id, { text: e.target.value })}
-                    className="w-full px-2 py-1.5 border border-gray-300 rounded-md text-sm"
+                    onChange={(val) => updateNode(node.id, { text: val })}
+                    placeholder="Type node text and use Add Blank"
                   />
                 </div>
                 {hasBlank && (

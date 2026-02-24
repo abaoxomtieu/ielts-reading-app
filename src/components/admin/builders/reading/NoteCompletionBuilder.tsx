@@ -8,6 +8,7 @@ import type {
   AnswerKey,
 } from '@/types';
 import PassageHtmlEditor from '@/components/admin/PassageHtmlEditor';
+import VisualBlankEditor from '@/components/admin/VisualBlankEditor';
 
 interface Props {
   question: NoteCompletionQuestion;
@@ -217,14 +218,15 @@ export default function NoteCompletionBuilder({ question, onChange }: Props) {
                     </button>
                     <div>
                       <label className="block text-[10px] font-semibold text-gray-500 uppercase mb-1">
-                        Text (use [______] for blank)
+                        Text (click &quot;Add Blank&quot; and drag pills)
                       </label>
-                      <textarea
+                      <VisualBlankEditor
                         value={bp.text}
-                        onChange={(e) =>
-                          updateBulletPoint(sIdx, bpIdx, { text: e.target.value })
+                        onChange={(val) =>
+                          updateBulletPoint(sIdx, bpIdx, { text: val })
                         }
-                        className="w-full px-2 py-1.5 border border-gray-300 rounded-md text-xs"
+                        className="text-xs"
+                        placeholder="Type note text and use Add Blank"
                       />
                     </div>
                     <div>

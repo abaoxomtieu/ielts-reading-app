@@ -2,6 +2,7 @@
 
 import React, { useEffect, useState } from 'react';
 import type { SentenceCompletionQuestion, SentenceCompletionItem, AnswerKey } from '@/types';
+import VisualBlankEditor from '@/components/admin/VisualBlankEditor';
 
 interface Props {
   question: SentenceCompletionQuestion;
@@ -132,12 +133,12 @@ export default function SentenceCompletionBuilder({ question, onChange }: Props)
               <div className="text-xs font-semibold text-gray-500 mb-1">Item {idx + 1}</div>
               <div>
                 <label className="block text-xs font-semibold text-gray-600 uppercase mb-1">
-                  Sentence text (use [______] for blank)
+                  Sentence text (click &quot;Add Blank&quot; and drag pills)
                 </label>
-                <textarea
+                <VisualBlankEditor
                   value={s.text}
-                  onChange={(e) => updateSentence(s.id, { text: e.target.value })}
-                  className="w-full px-2 py-1.5 border border-gray-300 rounded-md text-sm"
+                  onChange={(val) => updateSentence(s.id, { text: val })}
+                  placeholder="Type sentence and use Add Blank"
                 />
               </div>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
